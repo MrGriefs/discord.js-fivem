@@ -1,16 +1,25 @@
-const { Collection } = require('@discordjs/collection');
+'use strict';
+
 const { Client } = require('discord.js');
-const ServerManager = require('./managers/ServerManager');
 const RESTManager = require('./RESTManager');
+const ServerManager = require('./managers/ServerManager');
 
-class ExtendedClient extends Client {
-    constructor(options) {
-        super(options);
+/**
+ * The extended client
+ * @extends {Client}
+ */
+class FiveMClient extends Client {
+  constructor(options) {
+    super(options);
 
-        this.restFiveM = new RESTManager(this, process.env.FIVEM_IP_ADDRESS);
+    this.restFiveM = new RESTManager(this);
 
-        this.servers = new ServerManager(this);
-    }
+    /**
+     * This client's server manager
+     * @type {ServerManager}
+     */
+    this.servers = new ServerManager(this);
+  }
 }
 
-module.exports = ExtendedClient;
+module.exports = FiveMClient;
