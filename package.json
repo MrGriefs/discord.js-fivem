@@ -15,5 +15,9 @@
   },
   "devDependencies": {
     "dotenv": "^10.0.0"
+  },
+  "engines": {
+    "node": ">=16.6.0",
+    "npm": ">=7.0.0"
   }
 }
