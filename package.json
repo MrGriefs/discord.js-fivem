@@ -47,7 +47,6 @@
   "homepage": "https://github.com/MrGriefs/discord.js-fivem#readme",
   "devDependencies": {
     "clean-jsdoc-theme": "^3.2.8",
-    "docdash": "^1.2.0",
     "dotenv": "^10.0.0",
     "dtslint": "^4.1.6",
     "eslint": "^7.32.0",
