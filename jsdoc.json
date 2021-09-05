@@ -9,7 +9,6 @@
     "recurse": true,
     "readme": "./README.md",
     "verbose": true,
-    "package": "package.json",
     "destination": "./docs/",
     "template": "node_modules/clean-jsdoc-theme",
     "theme_opts": {

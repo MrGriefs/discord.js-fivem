@@ -28,7 +28,7 @@
 
 
     <title>
-      structures/Player.js
+      managers/ServerManager.js
     </title>
 
     <!--[if lt IE 9]>
@@ -80,7 +80,7 @@
   <body>
 
     <nav class="navbar" id="navbar">
-      <div class="navbar-heading" id="navbar-heading"><a href="index.html"><h2 class="navbar-heading-text">Home</h2></a></div><div class="search-box" id="search-box"><div class="search-box-input-container"><input class="search-box-input" type="text" placeholder="Search..." id="search-box-input" /><svg class="search-icon" alt="search-icon"><use xlink:href="#search-icon"></use></svg></div><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-main-content" id="sidebar-main-content"><div class="accordion collapsed" id="7900974" > <h3 class="accordion-heading">Classes<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="FiveMClient.html">FiveMClient</a></li><li class="accordion collapsed child" id=8811463><div class="accordion-heading child"><a href="Identifiers.html">Identifiers</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="Identifiers.html#get">get</a></li></ul></li><li class="accordion collapsed child" id=3277159><div class="accordion-heading child"><a href="Player.html">Player</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="Player.html#fetch">fetch</a></li></ul></li><li class="accordion collapsed child" id=6942191><div class="accordion-heading child"><a href="PlayerManager.html">PlayerManager</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="PlayerManager.html#resolve">resolve</a></li><li data-type='method'><a href="PlayerManager.html#resolveId">resolveId</a></li></ul></li><li class="accordion-list" id=""><a href="Server.html">Server</a></li><li class="accordion collapsed child" id=6694742><div class="accordion-heading child"><a href="ServerManager.html">ServerManager</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="ServerManager.html#fetch">fetch</a></li><li data-type='method'><a href="ServerManager.html#resolve">resolve</a></li><li data-type='method'><a href="ServerManager.html#resolveId">resolveId</a></li></ul></li></ul> </div><div class="accordion collapsed" id="8877034" > <h3 class="accordion-heading">Externals<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="external-BaseFetchOptions.html">BaseFetchOptions</a></li><li class="accordion-list" id=""><a href="external-Client.html">Client</a></li><li class="accordion-list" id=""><a href="external-Collection.html">Collection</a></li><li class="accordion-list" id=""><a href="external-User.html">User</a></li></ul> </div><div class="accordion collapsed" id="3308899" > <h3 class="accordion-heading">Global<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="global.html#PlayerResolvable">PlayerResolvable</a></li><li class="accordion-list" id=""><a href="global.html#ServerFetchOptions">ServerFetchOptions</a></li><li class="accordion-list" id=""><a href="global.html#ServerResolvable">ServerResolvable</a></li></ul> </div></div>
+      <div class="navbar-heading" id="navbar-heading"><a href="index.html"><h2 class="navbar-heading-text">Home</h2></a></div><div class="search-box" id="search-box"><div class="search-box-input-container"><input class="search-box-input" type="text" placeholder="Search..." id="search-box-input" /><svg class="search-icon" alt="search-icon"><use xlink:href="#search-icon"></use></svg></div><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-main-content" id="sidebar-main-content"><div class="accordion collapsed" id="1186853" > <h3 class="accordion-heading">Classes<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="FiveMClient.html">FiveMClient</a></li><li class="accordion collapsed child" id=5075096><div class="accordion-heading child"><a href="Identifiers.html">Identifiers</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="Identifiers.html#get">get</a></li></ul></li><li class="accordion collapsed child" id=5649433><div class="accordion-heading child"><a href="Player.html">Player</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="Player.html#fetch">fetch</a></li></ul></li><li class="accordion collapsed child" id=2922151><div class="accordion-heading child"><a href="PlayerManager.html">PlayerManager</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="PlayerManager.html#resolve">resolve</a></li><li data-type='method'><a href="PlayerManager.html#resolveId">resolveId</a></li></ul></li><li class="accordion-list" id=""><a href="Server.html">Server</a></li><li class="accordion collapsed child" id=6223951><div class="accordion-heading child"><a href="ServerManager.html">ServerManager</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="ServerManager.html#fetch">fetch</a></li><li data-type='method'><a href="ServerManager.html#resolve">resolve</a></li><li data-type='method'><a href="ServerManager.html#resolveId">resolveId</a></li></ul></li></ul> </div><div class="accordion collapsed" id="5276570" > <h3 class="accordion-heading">Externals<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="external-BaseFetchOptions.html">BaseFetchOptions</a></li><li class="accordion-list" id=""><a href="external-Client.html">Client</a></li><li class="accordion-list" id=""><a href="external-Collection.html">Collection</a></li><li class="accordion-list" id=""><a href="external-User.html">User</a></li></ul> </div><div class="accordion collapsed" id="8727189" > <h3 class="accordion-heading">Global<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="global.html#PlayerResolvable">PlayerResolvable</a></li><li class="accordion-list" id=""><a href="global.html#ServerFetchOptions">ServerFetchOptions</a></li><li class="accordion-list" id=""><a href="global.html#ServerResolvable">ServerResolvable</a></li></ul> </div></div>
       
 
     </nav>
@@ -95,7 +95,7 @@
     <div id="main" class="main-content">
       
       <h1 id='page-title' class="page-title">
-        structures/Player.js
+        managers/ServerManager.js
       </h1>
       
 
@@ -108,114 +108,98 @@
         <article>
             <pre class="prettyprint source linenums"><code>'use strict';
 
-const { Base } = require('discord.js');
-const Identifiers = require('../util/Identifiers');
+const { CachedManager } = require('discord.js');
+const Player = require('../structures/Player');
+const Server = require('../structures/Server');
 
 /**
- * A Player object
- * @extends {Base}
+ * Stores the cache for FiveM Servers
+ * @extends {CachedManager}
  */
-class Player extends Base {
-  constructor(client, data, server) {
-    super(client);
-
-    /**
-     * The server this player belongs to
-     * @type {Server}
-     */
-    this.server = server;
-
-    /**
-     * This player's id
-     * @type {number}
-     */
-    this.id = data.id;
-
-    /**
-     * This player's ping
-     * @type {number}
-     */
-    this.ping = null;
-
-    /**
-     * This player's in-game displayname
-     * @type {string}
-     */
-    this.name = null;
-
-    /**
-     * The estimated time this player joined the server
-     * @type {Date}
-     */
-    this.joinedAt = new Date();
-
-    /**
-     * The estimated time this player left the server
-     * @type {Date}
-     */
-    this.leftAt = null;
-
-    /**
-     * Whwther this player is no longer playing on this server
-     * @type {boolean}
-     */
-    this.left = false;
-
-    this._identifiers = [];
-
-    this._patch(data);
+class ServerManager extends CachedManager {
+  constructor(client, iterable) {
+    super(client, Server, iterable);
   }
 
-  _patch(data) {
-    if ('left' in data) {
-      this.left = data.left;
-      if (!this.leftAt) this.leftAt = new Date();
+  /**
+   * The cache of this Manager
+   * @type {Collection&lt;string, Server>}
+   * @name ServerManager#cache
+   */
+
+  /**
+   * Options used to fetch data from fivem
+   * @typedef {Object} ServerFetchOptions
+   * @property {boolean} [cache=true] - Whether to cache the fetched data if it wasn't already
+   * @property {boolean} [force=false] - Whether to skip the cache check and request the API
+   * @property {number} [update=120000] - The amount of time to "refresh" this server
+   */
+
+  /**
+   * Data that resolves to give a Server object. This can be:
+   * * A Player object
+   * * A Server id
+   * @typedef {string|Player|Server} ServerResolvable
+   */
+
+  /**
+   * Fetch a FiveM server
+   * @param {ServerResolvable} id - The server's id. Can be found in the cfx.re/join url
+   * @param {ServerFetchOptions} [options] - The options to use
+   * @example
+   * await client.servers.fetch('734okr')
+   * @returns {Promise&lt;Server>}
+   */
+  async fetch(id, { cache = true, force = false, update = 120000 } = {}) {
+    if (!force) {
+      const existing = this.cache.get(id);
+      if (existing) return existing;
     }
-    if ('endpoint' in data) this.endpoint = data.endpoint;
-    if ('identifiers' in data) this._identifiers = data.identifiers;
-    if ('name' in data) this.name = data.name;
-    if ('ping' in data) this.ping = data.ping;
-  }
 
-  toString() {
-    return `${this.name ?? 'Unknown'}`;
-  }
-
-  toJSON(...props) {
-    return super.toJSON(...props);
-  }
-
-  /**
-   * This player's identifiers
-   * @returns {Identifiers}
-   */
-  get identifiers() {
-    return new Identifiers(this._identifiers);
+    const data = await this.client.restFiveM
+      .request(id, 'single')
+      .catch(e => {
+        throw e;
+      })
+      .then(r => r.data);
+    const entry = this._add(data, cache, { id });
+    if (entry._interval) clearInterval(entry._interval);
+    if (typeof update === 'number' &amp;&amp; update > 0) {
+      entry._interval = setTimeout(() => {
+        this.fetch(id);
+      }, update);
+    }
+    return entry;
   }
 
   /**
-   * This player's Discord.js user
-   * @returns {User|null}
+   * Resolves a ServerResolvable to a Server object.
+   * @method resolve
+   * @memberof ServerManager
+   * @instance
+   * @param {ServerResolvable} server The server resolvable to identify
+   * @returns {?Server}
    */
-  get user() {
-    const id = this.identifiers.discord;
-    if (!id) return null;
-    return this.client.users.resolve(id);
+  resolve(server) {
+    if (server instanceof Player) return super.resolve(server.server);
+    return super.resolve(server);
   }
 
   /**
-   * Fetches this player's Discord.js user
-   * @param {BaseFetchOptions} options - Options to be used
-   * @returns {Promise&lt;User|null>}
+   * Resolves a {@link ServerResolvable} to a {@link Server} id string.
+   * @method resolveId
+   * @memberof ServerManager
+   * @instance
+   * @param {ServerResolvable} server The server resolvable to identify
+   * @returns {?string}
    */
-  fetch(options) {
-    const id = this.identifiers.discord;
-    if (!id) return null;
-    return this.client.users.fetch(id, options);
+  resolveId(server) {
+    if (server instanceof Player) return super.resolve(server.server.id);
+    return super.resolve(server);
   }
 }
 
-module.exports = Player;
+module.exports = ServerManager;
 </code></pre>
         </article>
     </section>
