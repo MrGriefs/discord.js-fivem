@@ -10,7 +10,10 @@
     "type": "git",
     "url": "https://github.com/MrGriefs/discord.js-fivem.git"
   },
-  "keywords": [],
+  "keywords": [
+    "discord.js",
+    "fivem"
+  ],
   "author": "Reece Stokes <hagen@paw.bot>",
   "license": "MIT",
   "bugs": {
