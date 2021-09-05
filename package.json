@@ -1,0 +1,19 @@
+{
+  "name": "fivem-bot",
+  "version": "1.0.0",
+  "description": "Integrates FiveM server & player data with Discord.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/main"
+  },
+  "keywords": [],
+  "author": "Reece Stokes <hagen@paw.bot>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "discord.js": "^13.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
