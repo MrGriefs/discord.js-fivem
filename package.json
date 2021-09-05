@@ -6,13 +6,21 @@
   "scripts": {
     "test": "node test/main"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrGriefs/discord.js-fivem.git"
+  },
   "keywords": [],
   "author": "Reece Stokes <hagen@paw.bot>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrGriefs/discord.js-fivem/issues"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "discord.js": "^13.1.0"
   },
+  "homepage": "https://github.com/MrGriefs/discord.js-fivem#readme",
   "devDependencies": {
     "dotenv": "^10.0.0"
   },
