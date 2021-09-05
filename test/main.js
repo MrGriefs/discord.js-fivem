@@ -19,7 +19,7 @@ client.on('ready', async () => {
     if (!channel) throw new Error('Channel could not be found.')
     console.info(`Channel id: '${channel.id}'`);
 
-    const server = await client.servers.fetch('jq6oaa');
+    const server = await client.servers.fetch('734okr');
     if (!server) throw new Error('Server could not be found.')
     console.info(`Server name: '${server.name}'`);
 
