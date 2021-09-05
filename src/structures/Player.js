@@ -1,4 +1,4 @@
-const { Base, User } = require('discord.js');
+const { Base } = require('discord.js');
 const Identifiers = require('../util/Identifiers')
 
 class Player extends Base {
@@ -93,13 +93,19 @@ class Player extends Base {
     /**
      * Fetches this player's Discord.js user
      * @param {BaseFetchOptions} options
-     * @returns {Promise<User>|null}
+     * @returns {Promise<User|null>}
      */
-    fetch(options) {
+    async fetch(options) {
         const id = this.identifiers.discord;
         if (!id) return null;
-        return this.client.users.fetch(options);
+        return await this.client.users.fetch(id, options);
     }
 }
+
+/**
+ * @typedef {import('discord.js').BaseFetchOptions} BaseFetchOptions
+ * @typedef {import('discord.js').User} User
+ * @typedef {import('./Server')} Server
+ */
 
 module.exports = Player;
